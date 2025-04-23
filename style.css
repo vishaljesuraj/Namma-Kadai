@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+  }
+  
+  header {
+    background: #666;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  header input {
+    width: 300px;
+    padding: 6px;
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Layout */
+  main {
+    display: flex;
+    padding: 20px;
+  }
+  
+  /* Products */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 2;
+  }
+  
+  .product-card {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .product-card .price {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .product-card button {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Cart section */
+  .cart {
+    flex: 1;
+    margin-left: 20px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #000;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ccc;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  .cart ul li img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .cart .total {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .product-grid {
+      width: 100%;
+    }
+  
+    .cart {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 90%;
+      max-width: 300px;
+      z-index: 1000;
+    }
+  
+    .cart.show {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namma Kadai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Namma Kadai</h2>
+    <input type="text" placeholder="Search">
+    <div class="cart-icon" id="cartToggle">🛒</div>
+
+  </header>
+
+  <main>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="phone.png" alt="Z Flip">
+        <h3>Z Flip foldable mobile</h3>
+        <p class="price">$120</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="product-card">
+        <img src="airpods.png" alt="Air Pods">
+        <h3>Air pods Pro</h3>
+        <p class="price">$60</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="product-card">
+        <img src="camera.png" alt="DSLR">
+        <h3>250D DSLR Camera</h3>
+        <p class="price">$100</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="product-card">
+        <img src="headphones.png" alt="Headphones">
+        <h3>Head Phones</h3>
+        <p class="price">$60</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <aside class="cart" >
+      <h3>My Cart</h3>
+      <ul>
+        <li><img src="phone.png"><span>Z Flip</span><span>$120</span><span>🗑️</span></li>
+        <li><img src="airpods.png"><span>Air Pods</span><span>$60</span><span>🗑️</span></li>
+        <li><img src="camera.png"><span>DSLR</span><span>$100</span><span>🗑️</span></li>
+        <li><img src="headphones.png"><span>Headphones</span><span>$60</span><span>🗑️</span></li>
+      </ul>
+      <div class="total">
+        <strong>Total:</strong> $340
+      </div>
+    </aside>
+  </main>
+</body>
+<script>
+    const cartToggle = document.getElementById("cartToggle");
+    const cart = document.querySelector(".cart");
+  
+    cartToggle.addEventListener("click", () => {
+      cart.classList.toggle("show");
+    });
+  </script>
+  
+  
+</html>
