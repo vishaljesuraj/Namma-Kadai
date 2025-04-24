@@ -17,3 +17,6 @@ A fully responsive and visually appealing e-commerce webpage built using HTML an
 - HTML  
 - CSS  
 
+## ©️ Author  
+**Vishal Jesu Raj**  
+[GitHub Profile](https://github.com/vishaljesuraj)
